@@ -1,0 +1,28 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "declaration": false,
+    "esModuleInterop": true,
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "strict": true,
+    "types": [
+      "webpack-env"
+    ],
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ]
+  },
+  "exclude": [
+    "./node_modules"
+  ],
+  "include": [
+    "./src/**/*.ts",
+    "./src/**/*.vue",
+  ],
+}
